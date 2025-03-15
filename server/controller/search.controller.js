@@ -1,3 +1,4 @@
+import {fetchFromTMDB} from "../service/tmdb.service.js"
 
 export const searchPerson = async (req,res)=>{
     const { query } = req.params;
