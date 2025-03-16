@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { SMALL_IMG_BASE_URL } from "../utils/constants";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-
 const MovieSlider = ({ category }) => {
 	const { contentType } = useContentStore();
 	const [content, setContent] = useState([]);
@@ -19,7 +18,7 @@ const MovieSlider = ({ category }) => {
 
 	useEffect(() => {
 		const getContent = async () => {
-			const res = await axios.get("/api/v1/${contentType}/${category}");
+			const res = await axios.get(`/api/v1/${contentType}/${category}`);
 			setContent(res.data.content);
 		};
 
