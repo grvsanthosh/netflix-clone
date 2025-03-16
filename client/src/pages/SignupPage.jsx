@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuthStore } from "../store/authUser";
 
-const SignUpPage = () => {
+const SignupPage = () => {
 	const { searchParams } = new URL(document.location);
 	const emailValue = searchParams.get("email");
 
@@ -92,4 +92,4 @@ const SignUpPage = () => {
 		</div>
 	);
 };
-export default SignUpPage;
+export default SignupPage;
