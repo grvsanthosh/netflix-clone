@@ -11,6 +11,8 @@ An netflix-clone application built with Vite, React.js for the frontend, and Nod
 - Responsive design with Tailwind CSS
 - state management using Zustand
 - handling 404 pages
+- Axios for API request.
+- React router dom for app routes.
 
 ### User Routes
 
